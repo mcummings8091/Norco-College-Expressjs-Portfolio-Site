@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/form.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <div class="main-right">
+        <div class="form-container">
+          <h1 id="h1">Contact Me</h1>
+          <form class="user-input" action="/submit" method="post">
+            <label id="user" for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your name..."
+            />
+            <label id="mail" for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Example@gmail.com"
+            />
+            <label id="text" for="message">Message:</label>
+            <input type="text" id="message" name="message" />
+            <input id="btn" type="submit" class="submit-btn" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div class="main-left">
+        <nav>
+          <ul class="nav-links">
+            <li id="home" class="nav-link"><a href="/">Home</a></li>
+            <li class="nav-link"><a href="/portfolio">Portfolio</a></li>
+            <li class="nav-link"><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
+    <script type="module" src="/js/contactannotate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 1</title>
+    <link rel="stylesheet" type="text/css" href="/css/project1.css" />
+  </head>
+  <body>
+    <div class="main-right">
+      <div class="container">
+        <img
+          src="/css/assets/screnshotter.png"
+          alt="DEMOIMAGE"
+          class="hero-img"
+        />
+        <h1 id="h1" class="project-title">Webflow Template screnshotter</h1>
+        <p class="description">
+          This script is a Node.js application that uses the Puppeteer library
+          to take screenshots of a webflow template site and its sections. It
+          also allows the user to specify a selector to take a screenshot of a
+          specific element on the page.
+        </p>
+        <p class="description">
+          Here's a short explanation of what the script does:
+        </p>
+        <ul id="points" class="script-points">
+          <li>
+            <p class="point">
+              Prompt user for URL and optional selections: The script prompts
+              the user to enter a URL and whether they want to add a selector.
+              If the user chooses to add a selector, they are prompted to enter
+              it.
+            </p>
+          </li>
+
+          <li>
+            <p class="point">
+              Create a folder for the screenshots: The script creates a folder
+              with the name of the website's URL (without the 'https://') to
+              store the screenshots.
+            </p>
+          </li>
+
+          <li>
+            <p class="point">
+              Launch Puppeteer and navigate to the page: The script launches a
+              new Puppeteer browser instance and opens a new page. It then
+              navigates to the URL entered by the user.
+            </p>
+          </li>
+
+          <li>
+            <p class="point">
+              Take a full-page screenshot: The script takes a full-page
+              screenshot of the webpage and saves it in the created folder.
+            </p>
+          </li>
+
+          <li>
+            <p class="point">
+              Take a screenshot of a specific element: If the user entered a
+              selector, the script waits for the element to appear on the page
+              and takes a screenshot of it. The screenshot is saved in a
+              subfolder named after the selector.
+            </p>
+          </li>
+
+          <li>
+            <p class="point">
+              Take screenshots of each section of the page: If the user chose to
+              enable sectionAndPageShot, the script waits for all sections of
+              the page to load, scrolls to each section, and takes a screenshot
+              of it. The screenshots are saved in a subfolder named 'sections'.
+            </p>
+          </li>
+
+          <li>
+            <p class="point">
+              Close the Puppeteer browser: After all screenshots are taken, the
+              script closes the Puppeteer browser.
+            </p>
+          </li>
+        </ul>
+
+        <p class="after-point">
+          This script is useful for taking screenshots of webpages and their
+          sections, especially for creating a portfolio or documentation of a
+          website
+        </p>
+      </div>
+      <div class="demo">
+        <h1>Partial Demo:</h1>
+        <h3>try: "gaze-webwflow-template.webflow.io"</h3>
+        <form action="/screenshot" class="user-input" method="post">
+          <label for="url">URL:</label>
+          <input
+            type="text"
+            id="url"
+            name="url"
+            placeholder="Enter url without 'https://'"
+            required
+          />
+          <input type="submit" value="Take Screenshot" />
+        </form>
+        <a
+          id="link"
+          class="github-link"
+          href="https://github.com/mcummings8091/Webflow-screenshotter"
+          >Github Repo</a
+        >
+      </div>
+    </div>
+    <div class="main-left">
+      <nav>
+        <ul class="nav-links">
+          <li id="home" class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/portfolio">Portfolio</a></li>
+          <li class="nav-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
+    <script type="module" src="/js/project1annotate.js"></script>
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>

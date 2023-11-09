@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <main>
+      <div class="main-container">
+        <div class="main-right">
+          <img src="" alt="" class="profile-photo" />
+
+          <h1 id="h1" class="hero-text">
+            <span id="hero"
+              >Hello, I'm Matthew Cummings, a California based developer.</span
+            >
+          </h1>
+
+          <p class="intro-text">
+            Since February 2022 I've embarked on a self-taught journey to
+            becoming a professional programmer. Through dedicated and continuous
+            learning I've progressed from an aspiring enthusiast to a proficient
+            web developer.
+          </p>
+
+          <p class="intro-text">
+            My self-motivated learning approach has equipped me with the ability
+            to adapt quickly to new technologies and frameworks. I constantly
+            challenge myself to expand my skill set. Throughout my learning
+            journey, I have undertaken several personal projects and
+            <span id="cert">accquired a certificate</span> in responsive web
+            design to solidify my skills and showcase my capabilities.
+          </p>
+
+          <p class="intro-text">
+            In addition to my self-taught experience, I have also gained
+            valuable industry exposure during my time at Oasco Solutions. As a
+            Software Developer, I spent three months contributing to the
+            development of tools using JavaScript and responsive web pages with
+            Webflow. This experience further refined my technical skills and
+            provided me with hands-on experience working within a professional
+            software development environment. Furthermore, to continue enhancing
+            my skills and knowledge in the field, I've decided to pursue a
+            Computer Science degree, which will offer me a solid foundation and
+            a deeper understanding of the principles underpinning web
+            development and software engineering
+          </p>
+
+          <p id="circle" class="intro-text">
+            I possess a proficient understanding of HTML, CSS, JavaScript, and
+            Python, which have served as the foundation of my technical
+            expertise. Additionally, I have gained practical experience with
+            React, Angular, Django, and various libraries.
+          </p>
+
+          <div class="skills">
+            <h2 class="skills-text">Core Skills:</h2>
+            <ul id="skills" class="skills-list">
+              <li>JavaScript</li>
+              <li>Typescript</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>Node.Js</li>
+              <li>Express.js</li>
+              <li>sqlite3</li>
+              <li>React</li>
+              <li>Angular</li>
+              <li>Webflow</li>
+              <li>Python</li>
+              <li>Django</li>
+            </ul>
+          </div>
+
+          <div class="certificate">
+            <img src="/css/assets/certificate.png" alt="" class="cert-img" />
+          </div>
+        </div>
+
+        <div class="main-left">
+          <nav>
+            <ul class="nav-links">
+              <li id="home" class="nav-link"><a href="/">Home</a></li>
+              <li class="nav-link"><a href="/portfolio">Portfolio</a></li>
+              <li class="nav-link"><a href="/contact">Contact</a></li>
+              <li class="nav-link"><a href="/register">Register</a></li>
+              <li class="nav-link"><a href="/login">Admin Login</a></li>
+            </ul>
+          </nav>
+
+          <button class="cursor-toggle" onclick="toggleCursorVisibility()">
+            Toggle Cursor
+          </button>
+        </div>
+
+        <div class="socials"></div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
+    <script type="module" src="/js/annotate.js"></script>
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/portfolio.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div class="main-right">
+      <div class="project-group">
+        <h1 class="portfolio-header">Portfolio</h1>
+        <ul class="project-list">
+          <% projects.forEach(function(project) { %>
+          <li>
+            <div class="project-card">
+              <a href="/projects/<%= project.name %>">
+                <h2 class="title"><%= project.name %></h2></a
+              >
+              <p id="description" class="project-description">
+                <%= project.description %>
+              </p>
+              <div class="project-techs">
+                <ul class="technologies">
+                  <% project.technologies.forEach(function(tech) { %>
+                  <li class="tech"><%= tech %></li>
+                  <% }); %>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <% }); %>
+        </ul>
+      </div>
+    </div>
+
+    <div class="main-left">
+      <nav>
+        <ul class="nav-links">
+          <li id="home" class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/portfolio">Portfolio</a></li>
+          <li class="nav-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="cursor-toggle" onclick="toggleCursorVisibility()">
+        Toggle Cursor
+      </button>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
+    <script type="module" src="/js/portannotate.js"></script>
+    <script src="/js/scripts.js"></script>
+  </body>
+</html>

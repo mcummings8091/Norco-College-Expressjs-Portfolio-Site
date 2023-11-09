@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/project2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-right">
+      <div class="container">
+        <h1 id="h1" class="heading">React Personal Portfolio</h1>
+        <div class="slideshow-container">
+          <div class="slides fade">
+            <div class="numbertext">1 / 6</div>
+            <img
+              class="slide-img"
+              src="/css/assets/react1.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Text</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="numbertext">2 / 6</div>
+            <img
+              class="slide-img"
+              src="/css/assets/react2.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Two</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="numbertext">3 / 6</div>
+            <img
+              class="slide-img"
+              src="/css/assets/react3.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="numbertext">4 / 6</div>
+            <img
+              class="slide-img"
+              src="/css/assets/react4.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="numbertext">5 / 6</div>
+            <img
+              class="slide-img"
+              src="/css/assets/react5.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <div class="slides fade">
+            <div class="numbertext">6 / 6</div>
+            <img
+              class="slide-img"
+              src="/css/assets/react6.png"
+              style="width: 100%"
+            />
+            <div class="text">Caption Three</div>
+          </div>
+
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+        <br />
+
+        <div style="text-align: center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+        <div id="description">
+          <h2 class="sub-title">intention</h2>
+          <p class="description">
+            This is a portfolio site that is currently a work in progress. This
+            was built with the intention of getting fundamental experience
+            building with React. The site currently displays several webpages
+            and projects I have built.
+          </p>
+          <h2 class="sub-title">Design</h2>
+          <p class="description">
+            I've decided to go with a Neon green/"Matrix" design style for the
+            overall theme. On the live site the iconic "Matrix text" background
+            is a 'live wallpaper'.
+          </p>
+          <h2 class="sub-title">Styled-components</h2>
+          <p class="description">
+            I used the Styled components library to style the individual and
+            reusuable componeSnts and in the app.
+          </p>
+        </div>
+        <a
+          id="link"
+          class="github-link"
+          href="https://github.com/mcummings8091/React-Personal-Portfolio"
+          >Github Repo</a
+        >
+      </div>
+    </div>
+    <div class="main-left">
+      <nav>
+        <ul class="nav-links">
+          <li id="home" class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/portfolio">Portfolio</a></li>
+          <li class="nav-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
+    <script type="module" src="/js/project2annotate.js"></script>
+    <script src="/js/project2.js"></script>
+  </body>
+</html>

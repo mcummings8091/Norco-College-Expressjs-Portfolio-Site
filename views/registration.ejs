@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/login.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="main-right">
+      <div class="form-container">
+        <h1 id="h1">Register Account</h1>
+        <form class="user-input" action="/register" method="post">
+          <label id="user" for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label id="mail" for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <label id="text" for="role">Role:</label>
+          <input type="text" id="role" name="role" required />
+          <input id="btn" type="submit" class="submit-btn" value="Sign up" />
+        </form>
+      </div>
+    </div>
+
+    <div class="main-left">
+      <nav>
+        <ul class="nav-links">
+          <li id="home" class="nav-link"><a href="/">Home</a></li>
+          <li class="nav-link"><a href="/portfolio">Portfolio</a></li>
+          <li class="nav-link"><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/rough-notation?module"
+    ></script>
+    <script type="module" src="/js/contactannotate.js"></script>
+  </body>
+</html>
